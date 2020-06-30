@@ -1,0 +1,6 @@
+{
+  "name": "the-one-widget-experience-builder",
+  "type": "exb-web-extension-repo",
+  "description": "This is a extension repository that contains The One Widget.",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}
