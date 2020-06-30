@@ -1110,7 +1110,7 @@
   },
   "template": "jewelrybox",
   "attributes": {
-    "portalUrl": "https://arcgis.com"
+    "portalUrl": "https://maps.arcgis.com"
   },
   "themeManifest": {
     "name": "default",
@@ -1228,7 +1228,7 @@
       "itemId": "3f435b0f36ea436cb4b8dd2312ea8551",
       "id": "dataSource_1",
       "label": "World Cities Web Map",
-      "portalUrl": "https://arcgis.com"
+      "portalUrl": "https://maps.arcgis.com"
     }
   },
   "messageConfigs": {},
