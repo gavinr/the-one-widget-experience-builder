@@ -7,13 +7,12 @@ import {
   DataSourceManager,
 } from "jimu-core";
 import { BaseWidgetSetting, AllWidgetSettingProps } from "jimu-for-builder";
-import { Switch, TextInput, NumericInput } from "jimu-ui";
 import {
   JimuMapViewSelector,
   SettingSection,
   SettingRow,
   JimuLayerViewSelector,
-} from "jimu-ui/setting-components";
+} from "jimu-ui/advanced/setting-components";
 import { IMConfig } from "../config";
 import defaultMessages from "./translations/default";
 import { IMJimuLayerViewInfo } from "jimu-arcgis";
