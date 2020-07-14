@@ -2,7 +2,7 @@
   "name": "the-one-widget",
   "type": "widget",
   "version": "1.0.0",
-  "exbVersion": "1.0.0",
+  "exbVersion": "1.1.0",
   "author": "Gavin Rehkemper",
   "description": "Example Experience builder widget showing how to wrap a React component to be used in both Experience Builder and a React app.",
   "copyright": "",
