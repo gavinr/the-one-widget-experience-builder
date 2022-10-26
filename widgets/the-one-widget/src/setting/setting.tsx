@@ -1,19 +1,12 @@
 /** @jsx jsx */
-import {
-  React,
-  FormattedMessage,
-  css,
-  jsx,
-  DataSourceManager,
-} from "jimu-core";
+import { React, css, jsx, DataSourceManager } from "jimu-core";
 import { BaseWidgetSetting, AllWidgetSettingProps } from "jimu-for-builder";
-import { Switch, TextInput, NumericInput } from "jimu-ui";
 import {
   JimuMapViewSelector,
   SettingSection,
   SettingRow,
   JimuLayerViewSelector,
-} from "jimu-ui/setting-components";
+} from "jimu-ui/advanced/setting-components";
 import { IMConfig } from "../config";
 import defaultMessages from "./translations/default";
 import { IMJimuLayerViewInfo } from "jimu-arcgis";
@@ -49,7 +42,7 @@ export default class Setting extends BaseWidgetSetting<
   onLayerSelected = (jimuLayerViewInfo: IMJimuLayerViewInfo) => {
     console.log("layer selected", jimuLayerViewInfo);
     const dataSourceId = jimuLayerViewInfo
-      ? jimuLayerViewInfo.datasourceId
+      ? jimuLayerViewInfo.dataSourceId
       : null;
     const dataSource: any = this.dsManager.getDataSource(dataSourceId);
     const layer = dataSource ? dataSource.layer : null;
