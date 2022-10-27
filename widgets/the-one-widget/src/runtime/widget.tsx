@@ -4,7 +4,7 @@ import { IMConfig } from "../config";
 import MyWidget from "the-one-widget";
 import { JimuMapViewComponent, JimuMapView } from "jimu-arcgis";
 
-const Sketch = require("esri/widgets/Sketch");
+import Sketch from "esri/widgets/Sketch";
 
 export default class Widget extends BaseWidget<AllWidgetProps<IMConfig>, any> {
   constructor(props) {
@@ -20,7 +20,7 @@ export default class Widget extends BaseWidget<AllWidgetProps<IMConfig>, any> {
           this.props.useMapWidgetIds &&
           this.props.useMapWidgetIds.length === 1 && (
             <JimuMapViewComponent
-              useMapWidgetIds={this.props.useMapWidgetIds}
+              useMapWidgetId={this.props.useMapWidgetIds[0]}
               onActiveViewChange={(jmv: JimuMapView) => {
                 if (jmv && jmv.view) {
                   this.setState({
